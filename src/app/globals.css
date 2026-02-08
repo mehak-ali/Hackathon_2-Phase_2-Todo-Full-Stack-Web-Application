@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add any custom global styles here */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Use the Inter font family */
+  background-color: theme('colors.background'); /* Apply the custom background color */
+  color: theme('colors.text'); /* Apply the custom text color */
+}
+
+#_next {
+  height: 100%;
+}
+
+@layer base {
+  :root {
+    --color-primary: 63 66 241;
+    --color-secondary: 139 92 246;
+    --color-accent: 236 72 153;
+    --color-background: 249 250 251;
+    --color-text: 31 41 55;
+    --color-text-light: 107 114 128;
+  }
+}

@@ -1,0 +1,22 @@
+Generic single-database configuration.
+
+This file is for the Alembic 'autogenerate' feature.
+
+In order to use this script, you will need to have your model's
+MetaData object available here.
+
+For example, from your application:
+
+    from myapp.mymodel import Base
+    target_metadata = Base.metadata
+
+This allows the 'autogenerate' feature to detect changes to your model
+and generate migration scripts automatically.
+
+Then, you can run Alembic like this:
+
+    alembic revision --autogenerate -m "Added account table"
+
+And then run the migration:
+
+    alembic upgrade head
